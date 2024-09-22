@@ -8,7 +8,6 @@ A fun and simple Snake Game built using **HTML**, **CSS**, and **JavaScript**. �
 - **Food Generation**: The snake grows longer each time it consumes food, which appears randomly on the game board.
 - **Collision Detection**: The game ends when the snake collides with itself or the walls.
 - **Score Tracking**: Keep track of your score as you play. Your highest scores are saved even after refreshing the browser thanks to **localStorage**.
-- **Responsive UI**: The game board and UI elements are responsive and styled using **CSS** for an enjoyable user experience.
 
 ## 🛠️ Technologies Used
 
