@@ -1,33 +1,43 @@
-# Simon Says Game 🎮
+# 🐍 Snake Game
 
-Welcome to the **Simon Says Game**, a fun and interactive memory-based game built using **HTML**, **CSS**, and **JavaScript**! 💻✨
+A fun and simple Snake Game built using **HTML**, **CSS**, and **JavaScript**. 🎮 This project is a modern take on the classic Snake Game, featuring intuitive controls, dynamic gameplay, and persistent score storage using **localStorage**.
 
 ## 🚀 Features
 
-- **Challenging Gameplay**: The game generates a random sequence of colors, and the player must repeat the sequence. The difficulty increases as the game progresses! 🧠
-- **Level Progression**: Each correct sequence moves the player to the next level, making the game more engaging and challenging. 🚀
-- **Score Tracking**: The game tracks and stores high scores in **localStorage**, allowing players to view their best performances across sessions! 🏅
-- **Game Over & Restart**: Players are prompted to restart the game when they make a mistake, aiming to achieve an even higher score next time! 🔄
-
-## 🎮 How to Play
-
-1. Press the **Enter** key to start the game.
-2. Watch the sequence of colors carefully.
-3. Click the buttons in the same order as the game presents them.
-4. If you complete the sequence correctly, you'll move to the next level.
-5. If you make a mistake, the game will show "Game Over" and allow you to restart by pressing **Enter**.
+- **Snake Movement**: Control the snake using the **WASD** keys or arrow keys.
+- **Food Generation**: The snake grows longer each time it consumes food, which appears randomly on the game board.
+- **Collision Detection**: The game ends when the snake collides with itself or the walls.
+- **Score Tracking**: Keep track of your score as you play. Your highest scores are saved even after refreshing the browser thanks to **localStorage**.
+- **Responsive UI**: The game board and UI elements are responsive and styled using **CSS** for an enjoyable user experience.
 
 ## 🛠️ Technologies Used
 
-- **HTML**: Structure of the game.
-- **CSS**: Styling and visual design.
-- **JavaScript**: Game logic, sequence generation, and score handling.
-- **localStorage**: Storing player scores across game sessions.
+- **HTML5**: For structuring the game elements.
+- **CSS3**: For styling the game, including gradients and 3D effects for the snake's head.
+- **JavaScript (ES6)**: For game logic, rendering, and user interactions.
+- **localStorage**: Used to persist scores between browser sessions.
 
-## 📂 Project Structure
+## 📋 How It Works
 
-```bash
-├── index.html        # Main HTML file
-├── style.css         # CSS for styling the game
-├── script.js         # JavaScript containing game logic
-├── README.md         # Project documentation
+1. **Game Logic**:
+   - The snake moves in the specified direction, controlled via the keyboard.
+   - Every time the snake eats the randomly positioned food, it grows in size and the score increments.
+   - The game ends if the snake collides with itself or the boundaries of the game board.
+   
+2. **Score Storage**:
+   - Scores are stored in the browser’s `localStorage`, allowing the leaderboard to persist across page reloads.
+   - The highest scores are displayed in a descending order after each game.
+
+## 🎮 How to Play
+
+- Use the **WASD** keys or **Arrow** keys to move the snake.
+- Avoid running into the walls or the snake’s body.
+- Eat the red food to grow and increase your score.
+- Try to achieve the highest score possible!
+
+## 📦 Setup and Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/snake-game.git
